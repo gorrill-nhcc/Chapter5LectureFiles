@@ -4,7 +4,6 @@ public class MinMax {
     /**
      * Demonstrates finding the largest value among three integers.
      *
-     * @param args command-line arguments; not used by this example
      */
     public static void main(String[] args) {
         // Create a Scanner to obtain input from the command window
@@ -58,6 +57,7 @@ public class MinMax {
      */
     public static int minValue(int n1, int n2, int n3) {
         // TODO: Start with Integer.MAX_VALUE and retain the smallest value found.
+        // can you do it with fewer statements than maxValue?
         return 0;
     }
 }
