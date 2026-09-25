@@ -1,0 +1,18 @@
+This is a DENSE Chapter. We will focus on the parts that are most important to OOP. That is not to say that some other topics are unimportant, we just don't have time or bandwith for all of the topics thrown at the wall in chapter 5.
+The following are what I think are the most important topics
+1. Method Fundamentals - what are they? How do we use them?
+    a. definition and call
+    b. parameters
+    c. returns
+    d. scope
+    e. call stack
+2. Static methods vs. instance methods
+3. Overloading
+4. Problem Decomposition - and Functional Decomposition
+5. Enums - brief intro
+6. Switch statement and switch expression (if we have time. It is in the text and great to know, but it is kinda off topic)
+
+
+
+
+
