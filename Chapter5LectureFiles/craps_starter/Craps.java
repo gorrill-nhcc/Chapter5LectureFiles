@@ -27,7 +27,10 @@ public class Craps {
     public static void main(String[] args) {
         /**
          * TODO: implement the main method to play a round of craps.
-         * The order of play is as follows:
+         * The order of a round of play is as follows:
+         * First, prompt the user for a bet amount. Be sure to validate the input to
+         * ensure that the bet is a positive number.
+         * Then, call the playRound method to simulate a round of craps.
          * 1. Call the comeOut method to simulate the first roll of the round.
          * 2. If the comeOut method returns -1, the player loses and the round is over.
          * 3. If the comeOut method returns 1, the player wins and the round is over.
