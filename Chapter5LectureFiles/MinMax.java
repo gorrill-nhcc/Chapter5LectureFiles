@@ -61,7 +61,14 @@ public class MinMax {
     public static int findMin(int a, int b, int c) {
         // This method is intentionally incomplete for the classroom exercise.
         // Try finding the minimum with a different approach than findMax.
+        int min = a; // initialize the min to one of the paramater args.
 
-        return 0;
+        if (b < min) {
+            min = b;
+        }
+        if (c < min) {
+            min = c;
+        }
+        return min;
     }
 }

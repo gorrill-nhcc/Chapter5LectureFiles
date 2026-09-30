@@ -17,7 +17,7 @@ public class SwitchExpressions {
     // A switch expression must be exhaustive, so a default case is required when
     // using int
     public static String getDayType(int day) {
-        return switch (day) {
+        String result = switch (day) {
             // Arrow labels (->) do not fall through to the next case like traditional colon
             // labels do
             // Multiple case values can share one arrow label by separating them with commas
@@ -26,6 +26,7 @@ public class SwitchExpressions {
             default -> {
                 // A block body ({ }) lets us run multiple statements before producing a value
                 // with yield
+                System.out.println("invalid");
                 yield "Invalid day";
                 /*
                  * yield behaves like a return in that it yields a result
@@ -34,6 +35,8 @@ public class SwitchExpressions {
                  */
             }
         };
+
+        return result;
     }
 
     // A traditional switch statement does not produce a value, so we must declare

@@ -20,12 +20,19 @@ public class PigGame {
         State player2State = State.ROLLING;
 
         // The game alternates turns until one player's score reaches the target.
+        playRound(die, player1Score, player2Score, player1State, player2State);
+
+    }
+
+    public static void playRound(Die die, int player1Score, int player2Score,
+            State player1State, State player2State) {
         while (player1Score < 20 && player2Score < 20) {
             System.out.println("Player 1's turn:");
             // Each player uses the same turn method so the rules stay consistent.
             // playTurn is a static (class) method, so we can call it with the class name.
             // We could also call it without the class name since we are in the same class.
             PigGame.playTurn(die, player1Score, player1State);
+
             if (player1State == State.HOLD) {
                 player1Score += player1Score;
                 System.out.println("Player 1 holds. Total score: " + player1Score);
@@ -52,7 +59,6 @@ public class PigGame {
                 break;
             }
         } // end of game loop
-
     }
 
     public static void playTurn(Die die, int playerScore, State playerState) {

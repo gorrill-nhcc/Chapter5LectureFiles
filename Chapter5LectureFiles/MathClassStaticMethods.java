@@ -1,6 +1,6 @@
 /**
  * Wow, that's a terrible class name.
- * But is is just a class to demonstrate Math class methods.
+ * But it is just a class to demonstrate Math class methods.
  * It is not intended to be a useful class.
  * 
  * Static methods cannot work on instance members of a class.
